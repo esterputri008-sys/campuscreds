@@ -33,7 +33,7 @@ function Landing() {
             <Link to="/verify" className="text-sm text-ink-foreground/80 hover:text-ink-foreground">Verifikasi</Link>
           </div>
           <div className="mt-20 max-w-3xl">
-            <span className="rounded-full border border-ink-foreground/20 px-3 py-1 text-xs text-ink-foreground/80">Prototype · Simulasi blockchain</span>
+            <span className="rounded-full border border-ink-foreground/20 px-3 py-1 text-xs text-ink-foreground/80">Prototype · Solana Devnet Simulation</span>
             <h1 className="mt-6 text-4xl font-semibold leading-tight md:text-6xl">Credential kampus yang bisa dibuktikan, bukan sekadar diklaim.</h1>
             <p className="mt-5 max-w-xl text-ink-foreground/75">CampusCreds membantu mahasiswa, organisasi kampus, dan verifier menerbitkan serta memverifikasi credential secara digital.</p>
             <div className="mt-8 flex flex-wrap gap-3">

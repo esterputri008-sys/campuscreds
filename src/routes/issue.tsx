@@ -65,6 +65,7 @@ function Issue() {
                 <div><dt className="text-muted-foreground">Credential ID</dt><dd className="font-mono font-semibold">{done.id}</dd></div>
                 <div><dt className="text-muted-foreground">Verification hash (dummy)</dt><dd><Hash value={done.hash} short={false} /></dd></div>
                 <div><dt className="text-muted-foreground">Blok simulasi</dt><dd className="font-mono">#{done.block}</dd></div>
+                <div><dt className="text-muted-foreground">Network</dt><dd className="font-mono">Solana Devnet Simulation</dd></div>
               </dl>
               <div className="mt-5 flex flex-wrap gap-2">
                 <Link to="/verify" search={{ id: done.id }} className="rounded-lg bg-accent px-3 py-2 text-sm font-semibold text-accent-foreground">Verifikasi</Link>

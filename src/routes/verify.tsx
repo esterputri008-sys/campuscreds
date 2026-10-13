@@ -77,7 +77,7 @@ function Verify() {
               <div className="mt-2 space-y-1">
                 <div className="text-muted-foreground">Verification hash</div>
                 <Hash value={res.cred.hash} short={false} />
-                <div className="pt-2 text-muted-foreground">Blok simulasi: <span className="font-mono">#{res.cred.block}</span> · Jaringan: <span className="font-mono">campus-testnet (simulasi)</span></div>
+                <div className="pt-2 text-muted-foreground">Blok simulasi: <span className="font-mono">#{res.cred.block}</span> · Jaringan: <span className="font-mono">Solana Devnet Simulation</span></div>
               </div>
             </div>
           </Card>
