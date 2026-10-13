@@ -112,7 +112,7 @@ export function CredentialTable({ items, onRevoke }: { items: Credential[]; onRe
 export function SimNotice() {
   return (
     <div className="rounded-lg border border-warning/40 bg-warning/15 px-4 py-2 text-xs text-warning-foreground">
-      Mode simulasi: tidak ada transaksi blockchain nyata. Semua data adalah dummy. CampusCreds tidak pernah meminta private key atau seed phrase.
+      Mode simulasi: tidak ada transaksi blockchain nyata. Network: Solana Devnet Simulation. Semua data dummy. Tidak ada wallet asli, private key, seed phrase, atau password yang diminta/disimpan.
     </div>
   );
 }
