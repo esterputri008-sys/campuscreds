@@ -7,7 +7,7 @@ import { useCredentials, verify } from "@/lib/credentials";
 import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/verify")({
-  validateSearch: (s: Record<string, unknown>): { id?: string } => ({ id: typeof s.id === "string" ? s.id : undefined }),
+  validateSearch: (s: Record<string, unknown>): { id?: string } => (typeof s.id === "string" ? { id: s.id } : {}),
   head: () => ({
     meta: [
       { title: "Verifikasi Credential — CampusCreds" },
@@ -46,7 +46,7 @@ function Verify() {
       </header>
       <main className="mx-auto -mt-12 max-w-3xl space-y-5 px-5 pb-16">
         <Card>
-          <form className="flex flex-col gap-3 sm:flex-row" onSubmit={(e) => { e.preventDefault(); nav({ search: { id: q.trim() || undefined } }); }}>
+          <form className="flex flex-col gap-3 sm:flex-row" onSubmit={(e) => { e.preventDefault(); nav({ search: q.trim() ? { id: q.trim() } : {} }); }}>
             <div className="relative flex-1">
               <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
               <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="CC-2026-XXXXXXXX" className="w-full rounded-lg border bg-card py-2.5 pl-9 pr-3 font-mono text-sm outline-none focus:ring-2 focus:ring-ring" />
