@@ -8,3 +8,4 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+- Demo data lives in a client-side store (src/lib/credentials.ts) persisted to localStorage; blockchain is a mock proof layer only — prototype has no backend.
