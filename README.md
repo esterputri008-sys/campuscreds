@@ -1,24 +1,54 @@
-# Pixel Perfect Copy
+# CampusCreds
 
-Implement exactly the screenshot and nothing else
+## Deskripsi
+CampusCreds adalah prototype aplikasi web untuk penerbitan dan verifikasi credential mahasiswa secara digital.
 
-This project was built with [Lovable](https://lovable.dev).
+Aplikasi ini membantu mahasiswa, organisasi kampus, dan verifier melakukan pengecekan keaslian credential menggunakan simulasi proof berbasis hash.
 
-## Build with Lovable
+## Masalah yang Diselesaikan
+Credential mahasiswa dalam bentuk digital dapat sulit diverifikasi karena dokumen dapat disalin atau dimodifikasi.
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/be3cec93-ba58-4132-8951-e1c41d46a1ee).
+CampusCreds menyediakan sistem verifikasi menggunakan Credential ID dan verification hash dummy untuk membantu pengecekan credential.
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+## Target Pengguna
+- Student
+- Organization Admin
+- Verifier
 
-## Development
+## Fitur Utama
+1. Organization Admin dapat menerbitkan credential dummy.
+2. Sistem membuat Credential ID unik.
+3. Sistem menghasilkan verification hash dummy.
+4. Student dapat melihat credential miliknya.
+5. Verifier dapat melakukan verifikasi credential berdasarkan Credential ID.
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+## Teknologi
+- React
+- TypeScript
+- Vite
+- Reusable Components
 
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
-```
+## Simulasi Blockchain
+Fitur blockchain pada CampusCreds masih berupa simulasi antarmuka.
+
+Network:
+Solana Devnet Simulation
+
+Project ini tidak melakukan:
+- Transaksi blockchain nyata.
+- Smart contract.
+- Wallet authentication asli.
+- Penyimpanan private key.
+- Penyimpanan seed phrase.
+
+## Data
+Seluruh data yang digunakan merupakan data dummy/sintetis.
+
+Project tidak menggunakan data mahasiswa asli atau data sensitif.
+
+## Cara Menjalankan Project
+
+Install dependency:
+
+```bash
+npm install
