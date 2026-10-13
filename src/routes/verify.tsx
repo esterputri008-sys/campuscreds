@@ -7,7 +7,7 @@ import { useCredentials, verify } from "@/lib/credentials";
 import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/verify")({
-  validateSearch: (s: Record<string, unknown>): { id?: string } => (typeof s.id === "string" ? { id: s.id } : {}),
+  validateSearch: (s: Record<string, unknown>): { id?: string } => (typeof s["id"] === "string" ? { id: s["id"] } : {}),
   head: () => ({
     meta: [
       { title: "Verifikasi Credential — CampusCreds" },
